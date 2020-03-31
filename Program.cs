@@ -38,8 +38,18 @@ namespace Hackerrank
 			}
 
 			/*-------------------------------------------------------------------------*/
+			String[] helptext = { "Purchase", "Order", "Item", "help", "can't", "find", "item", "item", "is ",
+						"too", "much", "part", "of", "purchase", "need", "fic", "for", "image",
+				        "item", "delivered", "too", "fast", "purchase", "order", "too", "big", "is",
+				         "purchase", "order", "coming", "?", "too", "big", "why", ""};
+			String sol = retrieveMostFrequentlyUsedWords(helptext);
 
-			Console.WriteLine("\n\n Hello Simple Math World!\n");
+			// Print word having highest frequency  
+			Console.WriteLine("\n\nMost frequently used word in the help search box:" + sol);
+
+			/*-------------------------------------------------------------------------*/
+
+			Console.WriteLine("\n\nHello Simple Math World!\n");
 			int val1 = 2;
 			int val2 = 3;
 			int sum = val1 + val2;
@@ -70,6 +80,7 @@ namespace Hackerrank
 			}
 			/*-----------------------------------------------------------------------*/
 		}
+
 		private static void search(int[,] mat, int n, int x)
 		{
 			int i = 0, j = n - 1;
@@ -90,6 +101,44 @@ namespace Hackerrank
 
 			Console.Write("\n n Element not found\n");
 			return;
+		}
+
+		public static String retrieveMostFrequentlyUsedWords(String[] helptext)
+		{
+			 
+			Dictionary<String, int> hs = new Dictionary<String, int>();
+
+			// Iterate through array of words  
+			for (int i = 0; i < helptext.Length; i++)
+			{
+				// If word already exist in Dictionary  
+				// then increase it's count by 1  
+				if (hs.ContainsKey(helptext[i]))
+				{
+					hs[helptext[i]] = hs[helptext[i]] + 1;
+				}
+
+				// Otherwise add word to Dictionary  
+				else
+				{
+					hs.Add(helptext[i], 1);
+				}
+			}
+			// Create set to iterate over Dictionary  
+			String key = "";
+			int value = 0;
+
+			foreach (KeyValuePair<String, int> me in hs)
+			{
+				// Check for word having highest frequency  
+				if (me.Value > value)
+				{
+					value = me.Value;
+					key = me.Key;
+				}
+			}
+			// Return word having highest frequency  
+			return key;
 		}
 	}
 }
