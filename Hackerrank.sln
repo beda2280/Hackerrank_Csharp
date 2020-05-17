@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hackerrank", "Hackerrank.csproj", "{1D2DD5F1-9D9E-4F8B-B268-59E8D7D7C22B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MdtInterview", "..\MdtInterview\MdtInterview.csproj", "{7BA980FC-AD9A-4240-808B-9B442789F33F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MdtInterview", "..\MdtInterview\MdtInterview.csproj", "{7BA980FC-AD9A-4240-808B-9B442789F33F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KLDiscovery", "..\KLDiscovery\KLDiscovery.csproj", "{A3CAA074-C016-44C1-80F1-B56DDFFE94DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7BA980FC-AD9A-4240-808B-9B442789F33F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BA980FC-AD9A-4240-808B-9B442789F33F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BA980FC-AD9A-4240-808B-9B442789F33F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CAA074-C016-44C1-80F1-B56DDFFE94DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CAA074-C016-44C1-80F1-B56DDFFE94DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CAA074-C016-44C1-80F1-B56DDFFE94DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CAA074-C016-44C1-80F1-B56DDFFE94DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
