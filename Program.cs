@@ -7,6 +7,10 @@ namespace Hackerrank
 	{
 		static void Main(string[] args)
 		{
+			_ = new CryptoEx()
+			{
+
+			};
 			/* A program that prints integers from 1 to N. But for integers that are multiples of A, print 'F', 
 			and for multiples of B, print 'B'. For integers which are multiples of both A and B, print 'FB'.*/
 
